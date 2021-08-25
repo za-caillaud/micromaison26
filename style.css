@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=Chango&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+.all {
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Chango", cursive;
+  background: url(./assets/img/plage2.jpg) center/cover;
+  position: relative;
+  min-height: 100vh;
+}
+
+.navbar {
+  background: #1a777798 center/cover;
+}
+
+.navbar-brand img {
+  margin-left: 30px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.navbar-toggler {
+  border: 5px solid;
+}
+.navbar-nav {
+  padding-left: 300px;
+}
+.nav-item {
+  padding-right: 100px;
+}
+
+header {
+  background: url("assets/img/plage3.jpg") fixed center/cover no-repeat;
+  margin: auto;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-titre {
+  display: block;
+  text-align: center;
+}
+.header-titre h4 {
+  font-size: 2rem;
+  margin: 50px auto;
+  letter-spacing: 7px;
+}
+.trait {
+  border: 1px solid white;
+  background: white;
+  width: 80px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+/* ***************************************************** */
+h1,
+h3,
+p {
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(44, 42, 44);
+}
+h4 {
+  letter-spacing: 15px;
+}
+#email,
+#telephone {
+  color: rgb(226, 218, 218);
+  letter-spacing: 0.1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  position: relative;
+}
+h1:after {
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 800px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: rgb(218 224 229) 0px 0px 6px 4px;
+  opacity: 0.7;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 4px;
+  z-index: -1;
+}
+#carouselExampleControls {
+  padding: 40px 90px;
+}
+.carousel-inner {
+  border-radius: 25px;
+  box-shadow: rgb(218 224 229) 0px 0px 9px 7px;
+}
+.carousel-item img {
+  height: 650px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 50px;
+  width: 50px;
+}
+
+/***************************************card-déscriptif***********************************/
+#covid {
+  background-color: burlywood;
+  border: 1px dashed rgb(216, 223, 236);
+}
+#descriptif {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100vw;
+
+  padding: 30px 50px;
+}
+.card {
+  background-color: #7fffd46e;
+  margin-bottom: 30px;
+  margin-inline: 10px;
+  border-radius: 25px;
+  box-shadow: rgb(218 224 229) 0px 0px 6px 4px;
+}
+.card,
+#date-tarif,
+#email-telephone,
+.info {
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+.card img {
+  border-radius: 25px 25px 0 0;
+}
+
+.info {
+  padding-top: 20px;
+  height: 300px;
+  width: 950px;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: rgba(110, 219, 219, 0.616);
+  border-radius: 25px;
+  box-shadow: rgb(218 224 229) 0px 0px 6px 4px;
+}
+.contact {
+  display: flex;
+  padding: 40px 30px;
+  justify-content: space-around;
+}
+#date-tarif {
+  padding: 30px;
+  margin-right: 20px;
+  background-color: rgba(110, 219, 219, 0.616);
+  height: auto;
+  width: auto;
+  border-radius: 25px;
+  box-shadow: rgb(218 224 229) 0px 0px 6px 4px;
+}
+
+#email-telephone {
+  width: auto;
+  padding: 30px;
+  text-align: center;
+  background-color: rgba(110, 219, 219, 0.349);
+  border-radius: 25px;
+  box-shadow: rgb(218 224 229) 0px 0px 6px 4px;
+}
+#text-cursive {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.6rem;
+  color: rgb(245, 242, 239);
+}
+
+/* *****************************formulaire************************************** */
+form {
+  margin: 0 auto;
+  width: 500px;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+  text-align: left;
+}
+
+input,
+textarea {
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #000;
+}
+
+textarea {
+  vertical-align: top;
+
+  height: 5em;
+}
+
+.button {
+  padding-left: 120px;
+}
+
+button {
+  margin-left: 0.5em;
+  background-color: rgba(110, 219, 219, 0.329);
+}
+
+/* ************************************google map******************************** */
+.googleMap {
+  margin: 30px auto;
+}
+
+/* **********************************************************************************
+************************************* FOOTER ****************************************
+************************************************************************************* */
+.footer {
+  position: relative;
+  margin-top: 30px;
+  height: 80px;
+  width: 100vw;
+  background: rgba(18, 76, 107, 0.938) center/cover;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+}
+
+#copy {
+  margin-top: 20px;
+  padding-left: 20px;
+  text-align: left;
+  color: #beb5b5;
+}
+#copy h5 {
+  font-size: 0.9rem;
+}
+
+#social_icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 60%;
+}
+
+footer i {
+  color: rgb(248, 241, 241);
+  height: 30px;
+  width: 30px;
+  justify-content: center;
+  margin-right: 10px;
+  padding-top: 0 auto;
+  border-radius: 50%;
+}
+.arrow {
+  position: absolute;
+  margin-left: 90%;
+  margin-top: -7px;
+}
+.arrow img {
+  height: 30px;
+  width: 30px;
+}
+
+/********************************************************************
+************************     TRANSITION     *************************
+********************************************************************/
+
+.reveal [class*="reveal-"] {
+  opacity: 0 !important;
+  transform: translateY(50px) !important;
+}
+
+[class*="reveal-"] {
+  transition: 3s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.reveal-2 {
+  transition-delay: 0.4s;
+}
+
+.reveal-3 {
+  transition-delay: 0.5s;
+}
+
+/* **********************************************************************************
+*********************************** RESPONSIVE **************************************
+************************************************************************************* */
+
+@media screen and (max-width: 1010px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h1:after {
+    height: 20px;
+    width: 600px;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  .header-titre h4 {
+    font-size: 1.3rem;
+  }
+
+  p,
+  li,
+  #mail {
+    font-size: 0.9rem;
+  }
+  .contact {
+    display: grid;
+  }
+  .carousel-item img {
+    height: auto;
+  }
+  #descriptif {
+    grid-template-columns: 1fr 1fr;
+  }
+  .info,
+  #date-tarif,
+  #email-telephone {
+    height: 500px;
+    width: 500px;
+    margin-top: 20px;
+  }
+}
+/* ************************************ */
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 1.1rem;
+  }
+  h1:after {
+    height: 7px;
+    width: 300px;
+  }
+  h3 {
+    font-size: 0.9rem;
+  }
+  .header-titre h4 {
+    font-size: 0.9rem;
+  }
+  p,
+  li,
+  #mail {
+    font-size: 0.6rem;
+  }
+
+  .carousel-item img {
+    height: auto;
+  }
+  #descriptif {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+  .info,
+  #date-tarif,
+  #email-telephone {
+    height: 400px;
+    width: 300px;
+    margin-top: 20px;
+  }
+  #text-cursive {
+    font-size: 1rem;
+  }
+  form {
+    height: 400px;
+    width: 300px;
+  }
+  input,
+  textarea {
+    width: 250px;
+  }
+  label {
+    width: 120px;
+    font-size: 0.7rem;
+  }
+  button {
+    font-size: 0.7rem;
+  }
+  #copy h5 {
+    font-size: 0.6rem;
+  }
+}
+
+/* **************************************** */
+@media screen and (max-width: 400px) {
+  header {
+    background: url("assets/img/plage3-responsive.jpg") fixed center/cover
+      no-repeat;
+  }
+
+  h1 {
+    font-size: 0.9rem;
+  }
+  h1:after {
+    height: 3px;
+    width: 220px;
+  }
+  h3 {
+    font-size: 0.8rem;
+  }
+  .header-titre h4 {
+    font-size: 0.8rem;
+  }
+  p,
+  li,
+  #mail {
+    font-size: 0.5rem;
+  }
+  #text-cursive {
+    font-size: 0.7rem;
+  }
+  .info,
+  #date-tarif,
+  #email-telephone {
+    height: 400px;
+    width: 250px;
+    margin-top: 20px;
+  }
+  #copy h5 {
+    font-size: 0.4rem;
+  }
+
+  .arrow {
+    margin-left: 80%;
+    margin-top: -7px;
+  }
+  .arrow img {
+    height: 25px;
+    width: 25px;
+  }
+  footer i {
+    height: 20px;
+    width: 20px;
+    border: 1px solid rgb(158, 147, 147);
+    border-radius: 50%;
+  }
+}
+/*****************************************
+**************   REVEAL  ****************
+****************************************/
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal [class*="reveal-"] {
+    opacity: 1 !important;
+    transform: translateY(0px) !important;
+  }
+  [class*="reveal-"] {
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}
